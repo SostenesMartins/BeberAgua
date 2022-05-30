@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
 
@@ -17,7 +19,7 @@
             android:id="@+id/time_picker"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:headerBackground="@color/colorPrimary"
+            android:headerBackground="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,11 +42,11 @@
         <Button
             android:id="@+id/btn_notify"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="@color/colorAccent"
             android:onClick="notifyClick"
             android:text="@string/notify"
             android:textStyle="bold"

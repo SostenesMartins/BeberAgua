@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         activated = preferences.getBoolean("activated", false);
         if (activated) {
             btnNotify.setText(R.string.pause);
-            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorAccent));
+            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimaryRed));
             activated = true;
 
             int interval = preferences.getInt("interval", 0);
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!activated) {
             btnNotify.setText(R.string.pause);
-            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorAccent));
+            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimaryRed));
             activated = true;
 
             //BANCO DE DADOS
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             btnNotify.setText(R.string.notify);
-            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimary));
+            btnNotify.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorAccent));
             activated = false;
 
             //BANCO DE DADOS
